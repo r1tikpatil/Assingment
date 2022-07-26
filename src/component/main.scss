@@ -1,0 +1,146 @@
+body {
+    background-color: #dceef5;
+    .task-container {
+        width: 50%;
+        height: 70%;
+        position: absolute;
+        left: 30%;
+        top: 10%;
+
+        @media (min-width: 800px) {
+            width: 25%;
+            height: 70%;
+            left: 35%;
+        }
+
+        .InputDiv {
+            border-radius: 20px;
+            height: 30%;
+            width: 100%;
+            text-align: center;
+            background: linear-gradient(to left, #49bdf2, #2de6f2);
+
+            input {
+                height: 25px;
+                width: 60%;
+                padding: 5px;
+                font-size: 1.1rem;
+                font-weight: 500;
+                font-family: monospace;
+                border-radius: 15px;
+                border: 0px solid white;
+                position: absolute;
+                left: 10%;
+                top: 15%;
+
+                box-shadow: rgba(22, 31, 39, 0.42) 0px 60px 123px -25px, rgba(19, 26, 32, 0.08) 0px 35px 75px -35px;
+                border-radius: 10px;
+                border: 1px solid;
+                border-color: rgb(213, 220, 226) rgb(213, 220, 226) rgb(184, 194, 204);
+
+                &:focus {
+                    outline: none;
+                    box-shadow: 0px 0px 5px 2px grey;
+                }
+
+                @media (min-width: 600px) {
+                    left: 5%;
+                }
+            }
+
+            .submit {
+                width: 20%;
+                height: 35px;
+                cursor: pointer;
+                margin-left: 2px;
+                background-color: #27d8f6;
+                border: 1px solid grey;
+                border-radius: 15px;
+                font-size: 1.1rem;
+                font-weight: 550;
+                font-family: monospace;
+                color: rgb(112, 100, 100);
+                position: absolute;
+                left: 75%;
+                top: 15%;
+
+                &:active {
+                    transform: scale(0.95);
+                }
+            }
+
+            .reset {
+                display: block;
+                position: absolute;
+                left: 75%;
+                top: 3%;
+                background-color: white;
+                font-weight: 400;
+                width: 20%;
+                height: 35px;
+                cursor: pointer;
+                border: 1px solid grey;
+                border-radius: 15px;
+                font-size: 1.1rem;
+                font-family: monospace;
+                color: rgb(112, 100, 100);
+                &:active {
+                    transform: scale(0.95);
+                }
+                &:hover {
+                    color: red;
+                    box-shadow: 0 0 6px 1px white;
+                }
+            }
+        }
+
+        .display {
+            width: 100%;
+            height: auto;
+            padding: 0 2px;
+            .display-task {
+                margin: 1px auto;
+                width: 99%;
+                padding: 2px;
+                border-radius: 15px;
+                background-color: white;
+                margin: 3px 0;
+                border: 1px solid grey;
+                .task {
+                    font-size: 1.1rem;
+                    font-family: "Bigelow Rules", cursive;
+                    font-family: "Grand Hotel", cursive;
+                    font-family: "Montserrat", sans-serif;
+                    font-family: "Roboto Mono", monospace;
+                    text-transform: capitalize;
+                    margin-left: 7px;
+                }
+            }
+        }
+        .checked-display {
+            width: 100%;
+            height: auto;
+
+            .display-task {
+                border: 1px solid #49bdf2;
+                background-color: white;
+                box-sizing: border-box;
+                margin: 1px auto;
+                width: 99%;
+                padding: 2px;
+                border-radius: 15px;
+                box-shadow: 0 0 6px 2px #49bdf2;
+
+                .task {
+                    font-size: 1.1rem;
+                    font-family: "Bigelow Rules", cursive;
+                    font-family: "Grand Hotel", cursive;
+                    font-family: "Montserrat", sans-serif;
+                    font-family: "Roboto Mono", monospace;
+                    text-transform: capitalize;
+                    margin-left: 7px;
+                }
+            }
+        }
+    }
+}
